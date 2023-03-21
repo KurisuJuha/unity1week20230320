@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using AnnulusGames.LucidTools.Inspector;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float walkSpeed;
-    [SerializeField] private Rigidbody2D rb2d;
+    [SerializeField, Required] private Rigidbody2D rb2d;
 
     private void Update()
     {
