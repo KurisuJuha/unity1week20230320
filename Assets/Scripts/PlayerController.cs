@@ -1,6 +1,7 @@
 using UnityEngine;
 using AnnulusGames.LucidTools.Inspector;
 
+[HideMonoScript]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float walkSpeed;

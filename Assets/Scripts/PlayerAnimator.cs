@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using AnnulusGames.LucidTools.Inspector;
 
+[HideMonoScript]
 public class PlayerAnimator : MonoBehaviour
 {
     [SerializeField] private Sprite[] rightWalkAnimationSprites;
