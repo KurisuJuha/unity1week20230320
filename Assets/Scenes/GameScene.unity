@@ -466,6 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 561030536}
   - component: {fileID: 561030537}
+  - component: {fileID: 561030538}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -501,6 +502,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 521430328}
+--- !u!114 &561030538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561030535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05978998ec0228f4d86f718244ee982b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItemPrefab: {fileID: 4466467362369783717, guid: a7ddfee66222cde41b2dbecdd09f13d4, type: 3}
 --- !u!1 &946782708
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +526,7 @@ GameObject:
   - component: {fileID: 946782710}
   - component: {fileID: 946782709}
   - component: {fileID: 946782711}
+  - component: {fileID: 946782712}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -612,6 +627,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &946782712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946782708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc36d391beb5354686610d592dcd1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &971335893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: c1ff01671d7566c41b01b964dd172647, type: 3}
