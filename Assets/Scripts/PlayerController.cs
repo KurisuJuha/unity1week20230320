@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float walkSpeed;
+    [SerializeField] private Rigidbody2D rb2d;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        rb2d.velocity = Vector2.ClampMagnitude(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")), 1) * walkSpeed;
     }
 }
