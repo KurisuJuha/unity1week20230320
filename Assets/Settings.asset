@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f6c7b35af5b7a41a88d0de41ffa3c0, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
+  sounds: []

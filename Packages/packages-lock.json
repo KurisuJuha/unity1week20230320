@@ -7,6 +7,13 @@
       "dependencies": {},
       "hash": "87a205e9d1063245becc17afa5be4c79b3aea388"
     },
+    "com.neuecc.unirx": {
+      "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
+    },
     "com.unity.2d.animation": {
       "version": "7.0.9",
       "depth": 1,

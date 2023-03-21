@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.annulusgames.lucid-editor": "https://github.com/AnnulusGames/LucidEditor.git?path=/Assets/LucidEditor",
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
     "com.unity.2d.aseprite": "1.0.0-pre.2",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "1.17.7",
