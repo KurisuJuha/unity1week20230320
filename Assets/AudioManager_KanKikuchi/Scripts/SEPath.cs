@@ -5,9 +5,11 @@
 /// </summary>
 public static class SEPath{
 
-	public const string JINGLE10 = "SE/Jingle/jingle10";
-	public const string SYSTEM20 = "SE/system20";
-	public const string SYSTEM23 = "SE/system23";
+	public const string DART0 = "SE/dart0";
+	public const string DART1 = "SE/dart1";
+	public const string DART2 = "SE/dart2";
+	public const string DART3 = "SE/dart3";
+	public const string DART4 = "SE/dart4";
 
 }
 

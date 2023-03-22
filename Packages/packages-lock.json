@@ -7,6 +7,20 @@
       "dependencies": {},
       "hash": "87a205e9d1063245becc17afa5be4c79b3aea388"
     },
+    "com.annulusgames.lucid-random": {
+      "version": "https://github.com/AnnulusGames/LucidRandom.git?path=/Assets/LucidRandom",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bd0b5af1e34888f08af481ab2a6d9ca1d1c9c2f9"
+    },
+    "com.matsufriends.mornsoundprocessor": {
+      "version": "https://github.com/matsufriends/MornLib.git?path=MornSoundProcessor",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "3170446062f14050d73a18e5992b55cb7e84329b"
+    },
     "com.neuecc.unirx": {
       "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
       "depth": 0,
@@ -169,7 +183,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.16",
+      "version": "2.0.17",
       "depth": 0,
       "source": "registry",
       "dependencies": {

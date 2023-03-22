@@ -9,4 +9,7 @@ public class Player : MonoBehaviour
 
     [SerializeField, Required] private PlayerAnimator _playerAnimator;
     public PlayerAnimator playerAnimator => _playerAnimator;
+
+    [SerializeField, Required] private PlayerSoundSource _playerSound;
+    public PlayerSoundSource playerSound => _playerSound;
 }

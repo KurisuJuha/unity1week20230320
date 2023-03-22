@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 521430322}
   - component: {fileID: 521430326}
   - component: {fileID: 521430325}
+  - component: {fileID: 521430329}
   - component: {fileID: 521430324}
   - component: {fileID: 521430327}
   - component: {fileID: 521430328}
@@ -456,6 +457,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerController: {fileID: 521430326}
   _playerAnimator: {fileID: 521430325}
+  _playerSound: {fileID: 521430329}
+--- !u!114 &521430329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521430321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b204d0a147431ce48898ed4ab2b3a2f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 0.5
+  rb2d: {fileID: 521430324}
+  elapsedTime: 0
 --- !u!1 &561030535
 GameObject:
   m_ObjectHideFlags: 0

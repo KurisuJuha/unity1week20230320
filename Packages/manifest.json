@@ -1,13 +1,15 @@
 {
   "dependencies": {
     "com.annulusgames.lucid-editor": "https://github.com/AnnulusGames/LucidEditor.git?path=/Assets/LucidEditor",
+    "com.annulusgames.lucid-random": "https://github.com/AnnulusGames/LucidRandom.git?path=/Assets/LucidRandom",
+    "com.matsufriends.mornsoundprocessor": "https://github.com/matsufriends/MornLib.git?path=MornSoundProcessor",
     "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
     "com.unity.2d.aseprite": "1.0.0-pre.2",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "1.17.7",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.ide.rider": "3.0.16",
-    "com.unity.ide.visualstudio": "2.0.16",
+    "com.unity.ide.visualstudio": "2.0.17",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.recorder": "3.0.3",
     "com.unity.render-pipelines.universal": "12.1.8",
