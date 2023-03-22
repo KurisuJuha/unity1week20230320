@@ -1,5 +1,4 @@
 using UnityEngine;
-using UniRx;
 using KanKikuchi.AudioManager;
 using AnnulusGames.LucidTools.Inspector;
 using AnnulusGames.LucidTools.RandomKit;
