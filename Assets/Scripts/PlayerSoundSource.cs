@@ -1,30 +1,23 @@
 using UnityEngine;
-using KanKikuchi.AudioManager;
 using AnnulusGames.LucidTools.Inspector;
 using AnnulusGames.LucidTools.RandomKit;
+using AnnulusGames.LucidTools.Audio;
 
 public class PlayerSoundSource : MonoBehaviour
 {
     [SerializeField] private double interval;
+    [SerializeField] private AudioClip[] sePathes;
     [SerializeField, Required] private Rigidbody2D rb2d;
-    [SerializeField, ReadOnly] private double elapsedTime;
-    [SerializeField, ReadOnly]
-    private string[] sePathes = new string[]{
-        SEPath.DART0,
-        SEPath.DART1,
-        SEPath.DART2,
-        SEPath.DART3,
-        SEPath.DART4
-    };
-
     [SerializeField, Range(0, 1)] private float volume;
+    [SerializeField, ReadOnly] private double elapsedTime;
 
     private void Update()
     {
         elapsedTime += Time.deltaTime * rb2d.velocity.magnitude;
         if (elapsedTime > interval)
         {
-            SEManager.Instance.Play(sePathes.RandomElement(), volumeRate: volume);
+            LucidAudio.PlaySE(sePathes.RandomElement())
+                .SetVolume(volume);
             elapsedTime = 0;
         }
     }
