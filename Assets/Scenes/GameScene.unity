@@ -591,15 +591,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 0.5
+  sePathes:
+  - {fileID: 8300000, guid: 6d2e8887ab7fef846ae7b1f618125fc9, type: 3}
+  - {fileID: 8300000, guid: 21518aaef97a0504fad019904abb3f32, type: 3}
+  - {fileID: 8300000, guid: c7c9def2ade4aef42ab62e2c669e365e, type: 3}
+  - {fileID: 8300000, guid: 7060488749fdb5b4592a7f04badca25a, type: 3}
+  - {fileID: 8300000, guid: 47f55cdb311bd6e4799fdbbf9e3d7252, type: 3}
   rb2d: {fileID: 521430324}
   elapsedTime: 0
-  sePathes:
-  - SE/dart0
-  - SE/dart1
-  - SE/dart2
-  - SE/dart3
-  - SE/dart4
-  volume: 0
+  volume: 0.15
 --- !u!1 &561030535
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using AnnulusGames.LucidTools.Inspector;
 
 [Serializable]
 public class TileContents
@@ -11,7 +12,7 @@ public class TileContents
     public int durability => _durability;
 
     [SerializeField] private string _name;
-    [SerializeField] private TileBase _tileBase;
+    [SerializeField, Required] private TileBase _tileBase;
     [SerializeField] private bool _destructible;
-    [SerializeField] private int _durability;
+    [SerializeField, ShowIf("_destructible")] private int _durability;
 }

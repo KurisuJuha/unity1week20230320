@@ -12,3 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f6c7b35af5b7a41a88d0de41ffa3c0, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
+  _tileContentsList:
+  - _name: 
+    _tileBase: {fileID: 0}
+    _destructible: 0
+    _durability: 0
+  - _name: 
+    _tileBase: {fileID: 0}
+    _destructible: 0
+    _durability: 0
+  _mapSize: {x: 0, y: 0}

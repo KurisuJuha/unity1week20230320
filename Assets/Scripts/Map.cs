@@ -25,13 +25,13 @@ public class Map
         Tile tile = tiles[tilePosition.x, tilePosition.y];
 
         // 破壊不可能の場合はそもそも破壊しない
-        if (!Settings.tileContents[(int)tile.id].destructible) return false;
+        if (!Settings.tileContentsList[(int)tile.id].destructible) return false;
 
         TileID id = tile.id;
         TileDamage damage = new(tile.damage.value + power);
 
         // ダメージが許容値を超えた場合破壊する
-        if (Settings.tileContents[(int)id].durability <= damage.value)
+        if (Settings.tileContentsList[(int)id].durability <= damage.value)
         {
             // 破壊されたことの通知
             onTileDestroyed.OnNext(tilePosition);
