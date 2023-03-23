@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.annulusgames.lucid-audio": {
+      "version": "https://github.com/AnnulusGames/LucidAudio.git?path=/Assets/LucidAudio",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a6272922b891ed44cceda99cc9d991e2e59a51f1"
+    },
     "com.annulusgames.lucid-editor": {
       "version": "https://github.com/AnnulusGames/LucidEditor.git?path=/Assets/LucidEditor",
       "depth": 0,

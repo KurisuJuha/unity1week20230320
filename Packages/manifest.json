@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.annulusgames.lucid-audio": "https://github.com/AnnulusGames/LucidAudio.git?path=/Assets/LucidAudio",
     "com.annulusgames.lucid-editor": "https://github.com/AnnulusGames/LucidEditor.git?path=/Assets/LucidEditor",
     "com.annulusgames.lucid-random": "https://github.com/AnnulusGames/LucidRandom.git?path=/Assets/LucidRandom",
     "com.matsufriends.mornsoundprocessor": "https://github.com/matsufriends/MornLib.git?path=MornSoundProcessor",
