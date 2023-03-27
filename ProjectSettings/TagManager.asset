@@ -44,6 +44,12 @@ TagManager:
   - name: Map
     uniqueID: 825469241
     locked: 0
+  - name: DropItem
+    uniqueID: 3322357045
+    locked: 0
   - name: Object
     uniqueID: 2280173355
+    locked: 0
+  - name: UI
+    uniqueID: 952243665
     locked: 0
