@@ -5,6 +5,10 @@ using AnnulusGames.LucidTools.Inspector;
 [HideMonoScript]
 public class PlayerAnimator : MonoBehaviour
 {
+    [SerializeField] private Sprite rightIdleSprite;
+    [SerializeField] private Sprite leftIdleSprite;
+    [SerializeField] private Sprite upIdleSprite;
+    [SerializeField] private Sprite downIdleSprite;
     [SerializeField] private Sprite[] rightWalkAnimationSprites;
     [SerializeField] private Sprite[] leftWalkAnimationSprites;
     [SerializeField] private Sprite[] upWalkAnimationSprites;
@@ -12,8 +16,8 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private double animationInterval;
     [SerializeField, Required] private Rigidbody2D rb2d;
     [SerializeField, Required] private SpriteRenderer spriteRenderer;
+    [SerializeField, Required] private PlayerDirection playerDirection;
     [SerializeField, ReadOnly] private double elapsedTime;
-    [SerializeField, ReadOnly] private Direction direction = Direction.Down;
 
     private void Update()
     {
@@ -22,31 +26,27 @@ public class PlayerAnimator : MonoBehaviour
         if (inputVector.x > 0)
         {
             spriteRenderer.sprite = rightWalkAnimationSprites[(int)System.Math.Floor(elapsedTime / animationInterval) % rightWalkAnimationSprites.Length];
-            direction = Direction.Right;
         }
         if (inputVector.x < 0)
         {
             spriteRenderer.sprite = leftWalkAnimationSprites[(int)System.Math.Floor(elapsedTime / animationInterval) % leftWalkAnimationSprites.Length];
-            direction = Direction.Left;
         }
         if (inputVector.y > 0)
         {
             spriteRenderer.sprite = upWalkAnimationSprites[(int)System.Math.Floor(elapsedTime / animationInterval) % upWalkAnimationSprites.Length];
-            direction = Direction.Up;
         }
         if (inputVector.y < 0)
         {
             spriteRenderer.sprite = downWalkAnimationSprites[(int)System.Math.Floor(elapsedTime / animationInterval) % downWalkAnimationSprites.Length];
-            direction = Direction.Down;
         }
         if (inputVector == Vector2Int.zero)
         {
-            spriteRenderer.sprite = direction switch
+            spriteRenderer.sprite = playerDirection.direction switch
             {
-                Direction.Right => rightWalkAnimationSprites[0],
-                Direction.Left => leftWalkAnimationSprites[0],
-                Direction.Up => upWalkAnimationSprites[0],
-                Direction.Down => downWalkAnimationSprites[0],
+                Direction.Right => rightIdleSprite,
+                Direction.Left => leftIdleSprite,
+                Direction.Up => upIdleSprite,
+                Direction.Down => downIdleSprite,
                 _ => throw new Exception()
             };
         }

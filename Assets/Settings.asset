@@ -13,12 +13,27 @@ MonoBehaviour:
   m_Name: Settings
   m_EditorClassIdentifier: 
   _tileContentsList:
-  - _name: 
-    _tileBase: {fileID: 0}
+  - _name: Empty
+    _tileBase: {fileID: 11400000, guid: db6e92d56ae3994468d9c2baf4716cf1, type: 2}
     _destructible: 0
     _durability: 0
-  - _name: 
-    _tileBase: {fileID: 0}
-    _destructible: 0
-    _durability: 0
-  _mapSize: {x: 0, y: 0}
+  _mapSize: {x: 10, y: 10}
+  _itemContentsList:
+  - _name: Empty
+    _maxAmount: 1
+    _sprite: {fileID: 21300000, guid: 65d3fcda1e4855f46a341ecdc90cb0d4, type: 3}
+  - _name: Test
+    _maxAmount: 99
+    _sprite: {fileID: 2773596348627582186, guid: 8ce9051040580764ebaddb92b6aaff6e, type: 3}
+  - _name: MessageBottle
+    _maxAmount: 1
+    _sprite: {fileID: 6658049996461996992, guid: 57af2be0f4d4c0840bb97c4faa322bd8, type: 3}
+  _messageBottleList:
+  - _name: TestName
+    _position: {x: 8.15, y: 7.75}
+    _text: TestText
+  - _name: TestName2
+    _position: {x: 2, y: 2}
+    _text: 'TestText2
+
+'

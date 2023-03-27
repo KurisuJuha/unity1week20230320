@@ -1,18 +1,40 @@
 using UniRx;
+using System;
 
 public class Map
 {
-    public readonly Subject<TilePosition> onTileDestroyed;
-    public readonly Subject<TilePosition> onTileTakeDamaged;
-    public readonly Subject<TilePosition> onTileUpdated;
+    public IObservable<TilePosition> onTileDestroyed => _onTileDestroyed;
+    private readonly Subject<TilePosition> _onTileDestroyed;
+    public IObservable<TilePosition> onTileTakeDamaged => _onTileTakeDamaged;
+    private readonly Subject<TilePosition> _onTileTakeDamaged;
+    public IObservable<TilePosition> onTileUpdated => _onTileUpdated;
+    private readonly Subject<TilePosition> _onTileUpdated;
     private Tile[,] tiles;
 
     public Map()
     {
-        tiles = new Tile[10, 10];
-        onTileDestroyed = new();
-        onTileTakeDamaged = new();
-        onTileUpdated = new();
+        tiles = new Tile[Settings.mapSize.x, Settings.mapSize.y];
+        _onTileDestroyed = new();
+        _onTileTakeDamaged = new();
+        _onTileUpdated = new();
+    }
+
+    public void Load()
+    {
+        for (int y = 0; y < Settings.mapSize.y; y++)
+        {
+            for (int x = 0; x < Settings.mapSize.x; x++)
+            {
+                tiles[x, y] = new(TileID.Empty);
+            }
+        }
+        for (int y = 0; y < Settings.mapSize.y; y++)
+        {
+            for (int x = 0; x < Settings.mapSize.x; x++)
+            {
+                _onTileUpdated.OnNext(new(x, y));
+            }
+        }
     }
 
     public Tile GetTile(TilePosition tilePosition)
@@ -34,7 +56,7 @@ public class Map
         if (Settings.tileContentsList[(int)id].durability <= damage.value)
         {
             // 破壊されたことの通知
-            onTileDestroyed.OnNext(tilePosition);
+            _onTileDestroyed.OnNext(tilePosition);
 
             id = TileID.Empty;
             damage = new();
@@ -44,10 +66,10 @@ public class Map
         tiles[tilePosition.x, tilePosition.y] = new Tile(id, damage);
 
         //ダメージを受けたことの通知
-        onTileTakeDamaged.OnNext(tilePosition);
+        _onTileTakeDamaged.OnNext(tilePosition);
 
         // 更新
-        onTileUpdated.OnNext(tilePosition);
+        _onTileUpdated.OnNext(tilePosition);
 
         return true;
     }

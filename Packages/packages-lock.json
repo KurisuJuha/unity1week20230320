@@ -12,7 +12,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "87a205e9d1063245becc17afa5be4c79b3aea388"
+      "hash": "32c3d5eb09ea0a87e740b22813d3288e3b5a4488"
     },
     "com.annulusgames.lucid-input": {
       "version": "https://github.com/AnnulusGames/LucidInput.git?path=/Assets/LucidInput",
@@ -128,8 +128,8 @@
       "dependencies": {}
     },
     "com.unity.2d.tilemap.extras": {
-      "version": "2.2.3",
-      "depth": 1,
+      "version": "2.2.5",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.tilemap": "1.0.0",
@@ -349,7 +349,7 @@
       "url": "https://package.openupm.com"
     },
     "jp.juhakurisu.popoinventory": {
-      "version": "1.2.0",
+      "version": "1.3.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
